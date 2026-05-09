@@ -1,0 +1,14 @@
+# Transformações geradas pelo notebook (regeneráveis)
+dataset/transformacoes/
+
+# Mural gerado
+dataset/mural_transformacoes.png
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
