@@ -29,6 +29,15 @@ Aplicacao de tecnicas de filtragem para suavizacao, remocao de ruido e deteccao 
 - Deteccao de bordas: Sobel, Laplaciano, Canny
 - Analise comparativa com metricas (PSNR, SSIM) e justificativa tecnica
 
+### Atividade III — Filtragem no Dominio da Frequencia e Analise de Ruido (`aviii_filtros_fr/`)
+
+Insercao de ruido artificial e filtragem no dominio da frequencia sobre as imagens com ruido:
+
+- Selecao de 1 imagem por classe (concha e pedra) com caracteristicas (resolucao, formato)
+- Insercao de ruido gaussiano (media e desvio) e ruido sal e pimenta (porcentagem de pixels)
+- Filtro passa-baixo e passa-alto via Transformada de Fourier (FFT), com espectro e raio de corte
+- Comparacao final conectando ruido, filtro e impacto em algoritmos de visao computacional
+
 ## Estrutura
 
 ```
@@ -36,6 +45,8 @@ Aplicacao de tecnicas de filtragem para suavizacao, remocao de ruido e deteccao 
 │   └── visao_computacional_avi_.ipynb       # Notebook Atividade I
 ├── avii_filtros/
 │   └── visao_computacional_avii_.ipynb      # Notebook Atividade II
+├── aviii_filtros_fr/
+│   └── visao_computacional_aviii_.ipynb     # Notebook Atividade III
 ├── dataset/
 │   ├── concha/                              # 5 imagens originais
 │   └── pedra/                               # 5 imagens originais
