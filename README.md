@@ -38,6 +38,17 @@ Insercao de ruido artificial e filtragem no dominio da frequencia sobre as image
 - Filtro passa-baixo e passa-alto via Transformada de Fourier (FFT), com espectro e raio de corte
 - Comparacao final conectando ruido, filtro e impacto em algoritmos de visao computacional
 
+### Atividade IV — Segmentacao, Morfologia e Extracao de Caracteristicas (`aviv_seg/`)
+
+Pipeline completo de analise de imagens sobre a imagem `coins` (skimage.data, 24 moedas):
+
+- Aquisicao da imagem e descricao do conteudo
+- Segmentacao por limiarizacao global de Otsu (com suavizacao previa)
+- Operacoes morfologicas (erosao, dilatacao, abertura, fechamento) para refinar a mascara
+- Identificacao de objetos por componentes conectados, com separacao por watershed
+- Extracao de caracteristicas por objeto (area, perimetro, centroide, excentricidade, intensidade, diametro, solidez)
+- Analise dos resultados e discussao de erros (sub e supersegmentacao)
+
 ## Estrutura
 
 ```
@@ -47,6 +58,8 @@ Insercao de ruido artificial e filtragem no dominio da frequencia sobre as image
 │   └── visao_computacional_avii_.ipynb      # Notebook Atividade II
 ├── aviii_filtros_fr/
 │   └── visao_computacional_aviii_.ipynb     # Notebook Atividade III
+├── aviv_seg/
+│   └── visao_computacional_aviv_.ipynb      # Notebook Atividade IV
 ├── dataset/
 │   ├── concha/                              # 5 imagens originais
 │   └── pedra/                               # 5 imagens originais
