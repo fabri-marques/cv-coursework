@@ -49,6 +49,15 @@ Pipeline completo de analise de imagens sobre a imagem `coins` (skimage.data, 24
 - Extracao de caracteristicas por objeto (area, perimetro, centroide, excentricidade, intensidade, diametro, solidez)
 - Analise dos resultados e discussao de erros (sub e supersegmentacao)
 
+### Atividade V - Analise Global, Local e de Textura (`avv/`)
+
+Analise tecnica do proprio mini dataset (concha vs pedra) em tres niveis de representacao:
+
+- Nivel global: estatistica das 10 imagens (media, variancia, desvio, entropia) e histogramas de intensidade e cor, com comparacao entre original e versoes derivadas (resolucao reduzida, JPEG q8)
+- Nivel local: cantos Shi-Tomasi, blobs (blob_log), descritores ORB e matching com BFMatcher (Hamming), mais teste de robustez (rotacao, contraste, borramento)
+- Nivel de textura: GLCM (1 distancia, 4 angulos) e LBP (mapa e histograma) sobre patches representativos
+- Sintese comparativa dos cinco descritores e conclusao tecnica sobre qual foi mais adequado ao dataset
+
 ## Estrutura
 
 ```
@@ -60,6 +69,8 @@ Pipeline completo de analise de imagens sobre a imagem `coins` (skimage.data, 24
 │   └── visao_computacional_aviii_.ipynb     # Notebook Atividade III
 ├── aviv_seg/
 │   └── visao_computacional_aviv_.ipynb      # Notebook Atividade IV
+├── avv/
+│   └── visao_computacional_avv_.ipynb       # Notebook Atividade V
 ├── dataset/
 │   ├── concha/                              # 5 imagens originais
 │   └── pedra/                               # 5 imagens originais
